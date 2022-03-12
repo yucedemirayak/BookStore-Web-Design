@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./assets/Bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/FontAwesome/css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="assets/İmages/Logo.png"
+              style="margin-left: 1%; margin-right: 1%"
+              width="15%"
+              height="15%"
+            />
+            Book Store
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="list.html"
+                  >e-books</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">e-course</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">tutorials</a>
+              </li>
+              <li class="nav-item align-self-center">
+                <div
+                  style="
+                    width: 2px;
+                    height: 25px;
+                    border-radius: 1px;
+                    opacity: 80%;
+                    background-color: grey;
+                  "
+                ></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">log in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link c-dark" href="#">sign up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid mx-auto py-5 px-5" style="width: 90%;">
+      <section class="row mx-auto">
+        <div class="purchasing-stage current-stage col-3">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <strong class="ms-2">CART</strong>
+        </div>
+        <div class="purchasing-stage col-3">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <strong class="ms-2">INVOICE & DELIVERY</strong>
+        </div>
+        <div class="purchasing-stage col-3">
+          <i class="fa-solid fa-credit-card"></i>
+          <strong class="ms-2">PAYMENT</strong>
+        </div>
+        <div class="purchasing-stage col-3">
+          <i class="fa-solid fa-check-to-slot"></i>
+          <strong class="ms-2">APPROVAL</strong>
+        </div>
+        <div class="col-12 mx-0 px-0">
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped"
+              role="progressbar"
+              style="width: 25%; background-color: #ff9600"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              %25
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="row mx-auto w-100">
+          <strong
+            class="col-2 border-end border-bottom d-flex justify-content-center align-items-center"
+            >Item</strong
+          >
+          <strong
+            class="col-4 border-end border-bottom d-flex align-items-center"
+            >Title</strong
+          >
+          <strong
+            class="col-2 border-end border-bottom d-flex align-items-center"
+            >Quantitiy Unit</strong
+          >
+          <strong
+            class="col-2 border-end border-bottom d-flex align-items-center"
+            >Unit Price</strong
+          >
+          <strong
+            class="col-1 border-end border-bottom d-flex align-items-center"
+            >Total Amount</strong
+          >
+          <strong
+            class="col-1 border-bottom d-flex justify-content-center align-items-center"
+            >Delete</strong
+          >
+        </div>
+        <div class="row mx-auto w-100 mt-1">
+          <div class="col-2 d-flex justify-content-center align-content-center">
+            <img
+            class="shop-image"
+            src="./assets/İmages/Book Covers/Book-Cover.jpg"
+            alt=""
+          />
+          </div>          
+          <span class="col-4 d-flex align-items-center">My Book</span>
+          <span class="col-2 d-flex align-items-center">
+            1
+          </span>
+          <span class="col-2 d-flex align-items-center"><strong>132.41 $</strong></span>
+          <span class="col-1 d-flex align-items-center">132.41 $</span>
+          <div class="col-1 d-flex justify-content-center align-items-center">
+            <a href="#">
+              <i
+                class="fa-solid fa-square-xmark delete-book-from-cart"
+                style="color: #e33d25"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid px-0 mx-0 mt-5 d-flex row">
+        <div class="col-9 px-0 mx-0" style="right: 0px;">
+          <div class="container-fluid d-block px-0">
+            <div class="border-top border-bottom py-0 d-flex flex-row">
+              <a class="border-end border-white m-0 p-0" href="#">
+                <button class="basket-buttons">Print</button>
+              </a>
+              <a class="border-end border-white" href="#">
+                <button class="basket-buttons">Update Cart</button>
+              </a>
+              <a class="border-end border-white" href="#">
+                <button class="basket-buttons">Empty Cart</button>
+              </a>
+              <a class="border-end border-white" href="#">
+                <button class="basket-buttons">Continue Shopping</button>
+              </a>
+              <a class="" href="#">
+                <button class="basket-buttons">Add to My Shopping List</button>
+              </a>
+            </div>
+          </div>
+          <div class="text-uppercase pt-4">Discount Coupon</div>
+          <div class="row d-flex flex-row w-100 pe-auto mx-auto">
+            <input class="col-8" type="number" placeholder="Enter your coupon number">
+            <a class="col-4" href="#">
+              <button class="btn btn-danger w-100 button-apply">
+                APPLY
+              </button>
+            </a>
+          </div>          
+        </div>
+        <div class="col-3 mx-0 px-0">
+            <div class="row">
+              <span class="col-6 border">Cart Total</span>
+              <span class="col-6 border">197,60 $</span>
+            </div>
+            <div class="row">
+              <span class="col-6 border">Total Price</span>
+              <span class="col-6 border">197,60 $</span>
+            </div>
+        </div>
+        <div class="row container-fluid w-100 d-flex mt-3 m-0 p-0">
+          <div class="col-9 m-0 p-0">
+            <span style="font-size: smaller;">
+              Do not forget to <strong>update cart if you made any changes.</strong> You can discart order before Payment and Approval step.
+            </span>            
+          </div>
+          <div class="col-3">
+            <a class="container-fluid d-flex flex-row w-100 m-0 p-0" href="#">
+              <button class="btn btn-warning container-fluid d-flex flex-row button-buy">
+                <span class="col-8 text-white d-flex align-content-center justify-content-center my-auto">Buy</span>
+                <i class="offset-2 col-1 fa-solid fa-cart-shopping my-auto fs-3" style="color: white;"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container px-5 mt-auto pt-5">
+      <div class="d-flex justify-content-between">
+        <div>
+          <h5 class="footer-title">LEARN MORE</h5>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">TOUR</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">NEW FEATURES</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">CHANGELOG</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">CUSTOMERS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">ENTERPRISE</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">PRICING & PLANS</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer-title">ABOUT</h5>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">BLOG</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">COMPANY</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">JOBS</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer-title">SUPPORT</h5>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">COMMUNITY</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">CONTACT US</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">UXPIN TUTORIALS</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer-title">FEATURES</h5>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">MOCKUPS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">PROTOTYPING</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">PHOTOSHOP IMPORT</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">SKETCH IMPORT</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer-title">FREEBIES</h5>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">MOCKUPS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FEEBIES</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">E-BOOKS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">UI KITS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">TEMPLATES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center pt-3 pb-3">
+        <img src="./assets/İmages/Logo.png" alt="" width="32" height="32" />
+        <span class="mt-auto mb-auto ms-2">Book Store</span>
+      </div>
+    </footer>
+    <script src="./assets/Bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./assets/JQuery/js/jquery.min.js"></script>
+  </body>
+</html>

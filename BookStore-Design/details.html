@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book - Detail</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./assets/Bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/FontAwesome/css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="assets/İmages/Logo.png"
+              style="margin-left: 1%; margin-right: 1%"
+              width="15%"
+              height="15%"
+            />
+            Book Store
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="list.html"
+                  >e-books</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">e-course</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">tutorials</a>
+              </li>
+              <li class="nav-item align-self-center">
+                <div
+                  style="
+                    width: 2px;
+                    height: 25px;
+                    border-radius: 1px;
+                    opacity: 80%;
+                    background-color: grey;
+                  "
+                ></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">log in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link c-dark" href="#">sign up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="row p-4 mx-0">
+        <!--BOOK INFO-->
+        <div class="col-4 align-self-center">
+          <div class="row d-flex">
+            <div class="col-3 mt-auto mb-auto">
+              <div class="d-flex flex-column mini-image-list">
+                <a class="image-link" href="https://www.google.com">
+                  <img
+                    src="./assets/İmages/Book Covers/Book-Cover.jpg"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </a>
+                <img
+                  src="./assets/İmages/Book Covers/Book-Cover.jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+                <img
+                  src="./assets/İmages/Book Covers/Book-Cover.jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <div class="col-9">
+              <img
+                src="./assets/İmages/Book Covers/Book-Cover.jpg"
+                class="card-img"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <article class="col-6 book-detail pt-2 pb-2 flex-column">
+          <div class="book-name">MY BOOK COVER</div>
+          <div class="book-subject">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam
+            expedita voluptate exercitationem, consequuntur veritatis ipsum.
+            Culpa vitae, praesentium atque odit qui quae sed maxime repudiandae
+            amet, autem nemo, sapiente quam? Laudantium, aut. Architecto commodi
+            iure illum inventore, voluptates molestias, similique libero iste
+            perferendis id eaque, tempore adipisci ut dolore earum.
+          </div>
+          <div class="book-author">
+            Translator: Yüce Demirayak <br />
+            Release Date: 11.04.2019 <br />
+            ISBN: 123456 <br />
+            Lang: English <br />
+            Total Pages: 582 <br />
+            Cover Type: Paperback <br />
+            Paper Size: 15 x 22 cm
+          </div>
+        </article>
+        <div class="col-2">
+          <div
+            class="add-to-cart d-flex flex-column justify-content-between p-2"
+          >
+            <div class="book-price fs-5">12.234,72 TL</div>
+            <div class="parcel-info d-flex flex-column">
+              FREE delivery 2-9 March
+              <a href="">Details</a>
+            </div>
+            <div class="delivery-adress">
+              <i class="fa-solid fa-location-dot"></i>
+              <a href="" style="font-size: small"
+                >Choose your delivery adress</a
+              >
+            </div>
+            <div class="stock-info">Only 20 left in stock.</div>
+            <div class="purchasing-options">
+              <a
+                class="btn rounded-pill mb-1"
+                href="./cart.html"
+                style="width: 100%; background-color: #ffd814; font-size: small"
+                role="button"
+              >
+                ADD TO CART
+              </a>
+              <a
+                class="btn rounded-pill"
+                href="#"
+                style="width: 100%; background-color: #ffa41c; font-size: small"
+                role="button"
+              >
+                BUY NOW
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <span class="d-flex justify-content-center fs-5 mb-4">Similar Books</span>
+      <section class="container my-5" >
+        <div class="p-0 m-0 d-flex">
+          <a href="#inam" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <div id="inam" class="carousel slide container-fluid" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container d-flex justify-content-between">
+                  <img
+                    src="./assets/İmages/Book Covers/Book-Cover.jpg"
+                    class="similar-book-cover"
+                  />
+                  <img
+                    src="./assets/İmages/Book Covers/Book-Cover.jpg"
+                    class="similar-book-cover"
+                  />
+                  <img
+                    src="./assets/İmages/Book Covers/Book-Cover.jpg"
+                    class="similar-book-cover"
+                  />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container-fluid d-flex justify-content-between">
+                  <img
+                    src="./assets/İmages/Book Covers/Book-Cover.jpg"
+                    class="similar-book-cover"
+                  />
+                  <img
+                    src="./assets/İmages/Book Covers/Book-Cover.jpg"
+                    class="similar-book-cover"
+                  />
+                  <img
+                    src="./assets/İmages/Book Covers/Book-Cover.jpg"
+                    class="similar-book-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#inam" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </section>
+      
+    </main>
+    <footer class="container px-5 mt-auto pt-5">
+      <div class="d-flex justify-content-between">
+        <div>
+          <h5 class="footer-title">LEARN MORE</h5>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">TOUR</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">NEW FEATURES</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">CHANGELOG</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">CUSTOMERS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">ENTERPRISE</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">PRICING & PLANS</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer-title">ABOUT</h5>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">BLOG</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">COMPANY</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">JOBS</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer-title">SUPPORT</h5>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">COMMUNITY</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">CONTACT US</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">UXPIN TUTORIALS</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer-title">FEATURES</h5>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">MOCKUPS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">PROTOTYPING</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">PHOTOSHOP IMPORT</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">SKETCH IMPORT</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer-title">FREEBIES</h5>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">MOCKUPS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FEEBIES</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">E-BOOKS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">UI KITS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">TEMPLATES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center pt-3 pb-3">
+        <img src="./assets/İmages/Logo.png" alt="" width="32" height="32" />
+        <span class="mt-auto mb-auto ms-2">Book Store</span>
+      </div>
+    </footer>
+    <script src="./assets/Bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./assets/JQuery/js/jquery.min.js"></script>
+    <script src="./assets/Popper/js/popper.min.js"></script>
+    <script src="./assets/Bootstrap 4/bootstrap.min.js"></script>
+  </body>
+</html>

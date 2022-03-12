@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book List</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./assets/Bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/FontAwesome/css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="assets/İmages/Logo.png"
+              style="margin-left: 1%; margin-right: 1%"
+              width="15%"
+              height="15%"
+            />
+            Book Store
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="list.html"
+                  >e-books</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">e-course</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">tutorials</a>
+              </li>
+              <li class="nav-item align-self-center">
+                <div
+                  style="
+                    width: 2px;
+                    height: 25px;
+                    border-radius: 1px;
+                    opacity: 80%;
+                    background-color: grey;
+                  "
+                ></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">log in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link c-dark" href="#">sign up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid m-0 p-0">
+      <section class="row">
+        <section class="col-3 px-4 pt-1">
+          <div class="search-options border-bottom border-dark ps-2">
+            <strong class="border-bottom border-danger">Categories</strong>
+            <div class="overflow-auto" style="height: 100px">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  World Classics
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Novel
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Biography
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Article
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Science-Fiction
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Adventure
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="search-options border-bottom border-dark ps-2">
+            <strong class="border-bottom border-danger">Writers</strong>
+            <div class="overflow-auto" style="height: 100px">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Leo Tolstoy
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  William Shakespeare
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Fyodor Dostoevsky
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Charles dickens
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  J.R.R. Tolkien
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  George Orwell
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Edgar Allan Poe
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Victor Hugo
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Jane Austen
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="search-options border-bottom border-dark ps-2">
+            <strong class="border-bottom border-danger">Language</strong>
+            <div class="overflow-auto" style="height: 100px">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  English
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Turkish
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  French
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Italian
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  German
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Spanish
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="search-options border-bottom border-dark ps-2">
+            <strong class="border-bottom border-danger">Product Rating</strong>
+            <div class="d-flex flex-row">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckChecked"
+                checked
+              />
+              <div id="stars" class="ms-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="search-options border-bottom border-dark ps-2">
+            <strong class="border-bottom border-danger">Price Range</strong>
+            <div class="row d-flex justify-content-between pb-2">
+              <div class="col-5">
+                <input class="form-control" type="number" placeholder="Min">
+              </div>
+              <div class="col-5 me-2">
+                <input class="form-control" type="number" placeholder="Max">
+              </div>
+            </div>
+          </div>
+          <div class="search-options d-flex justify-content-center py-2">
+            <button type="submit" class="btn btn-primary">Apply Filters</button>
+          </div>
+        </section>
+        <section class="col-9">
+          <section class="d-flex justify-content-between pt-1 px-1">
+            <span>1-24 of 192 results</span>
+            <div class="shorted-area">
+              <div class="dropdown">
+                <button
+                  class="btn btn-sm btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Short By
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">New arrivals</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Avg. Customer Review</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Low price to High Price</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >High price to Low Price</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="row mt-3">
+            <div class="col-4">
+              <div class="card book-list-card-bg">
+                <div class="card-body">
+                  <img
+                    src="./assets/İmages/Book Covers/Book-Cover.jpg"
+                    class="book-cover"
+                    alt="..."
+                  />
+                  <i class="fa-solid fa-heart like-book liked"></i>
+                  <h5 class="card-title">My Book</h5>
+                  <a
+                    href="./details.html"
+                    class="btn btn-light rounded-pill shadow px-3"
+                    >GET IT NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card book-list-card-bg">
+                <div class="card-body">
+                  <img
+                    src="./assets/İmages/Book Covers/Book-Cover.jpg"
+                    class="book-cover"
+                    alt="..."
+                  />
+                  <i class="fa-regular fa-heart like-book unliked"></i>
+                  <h5 class="card-title">
+                    My Book
+                  </h5>
+                  <a href="#" class="btn btn-light rounded-pill shadow px-3"
+                    >GET IT NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card book-list-card-bg">
+                <div class="card-body">
+                  <img
+                    src="assets/İmages/Book Covers/Book-Cover.jpg"
+                    class="book-cover"
+                    alt="..."
+                  />
+                  <i class="fa-regular fa-heart like-book unliked"></i>
+                  <h5 class="card-title">My Book</h5>
+                  <a href="#" class="btn btn-light rounded-pill shadow px-3"
+                    >GET IT NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card book-list-card-bg">
+                <div class="card-body">
+                  <img
+                    src="./assets/İmages/Book Covers/Book-Cover.jpg"
+                    class="book-cover"
+                    alt="..."
+                  />
+                  <i class="fa-regular fa-heart like-book unliked"></i>
+                  <h5 class="card-title">My Book</h5>
+                  <a href="#" class="btn btn-light rounded-pill shadow px-3"
+                    >GET IT NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card book-list-card-bg">
+                <div class="card-body">
+                  <img
+                    src="https://edit.org/images/cat/book-covers-big-2019101610.jpg"
+                    class="book-cover"
+                    alt="..."
+                  />
+                  <i class="fa-regular fa-heart like-book unliked"></i>
+                  <h5 class="card-title">My Book</h5>
+                  <a href="#" class="btn btn-light rounded-pill shadow px-3"
+                    >GET IT NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card book-list-card-bg">
+                <div class="card-body">
+                  <img
+                    src="https://edit.org/images/cat/book-covers-big-2019101610.jpg"
+                    class="book-cover"
+                    alt="..."
+                  />
+                  <i class="fa-regular fa-heart like-book unliked"></i>
+                  <h5 class="card-title">My Book</h5>
+                  <a href="#" class="btn btn-light rounded-pill shadow px-3"
+                    >GET IT NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card book-list-card-bg">
+                <div class="card-body">
+                  <img
+                    src="https://edit.org/images/cat/book-covers-big-2019101610.jpg"
+                    class="book-cover"
+                    alt="..."
+                  />
+                  <i class="fa-regular fa-heart like-book unliked"></i>
+                  <h5 class="card-title">My Book</h5>
+                  <a href="#" class="btn btn-light rounded-pill shadow px-3"
+                    >GET IT NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card book-list-card-bg">
+                <div class="card-body">
+                  <img
+                    src="https://edit.org/images/cat/book-covers-big-2019101610.jpg"
+                    class="book-cover"
+                    alt="..."
+                  />
+                  <i class="fa-regular fa-heart like-book unliked"></i>
+                  <h5 class="card-title">My Book</h5>
+                  <a href="#" class="btn btn-light rounded-pill shadow px-3"
+                    >GET IT NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card book-list-card-bg">
+                <div class="card-body">
+                  <img
+                    src="https://edit.org/images/cat/book-covers-big-2019101610.jpg"
+                    class="book-cover"
+                    alt="..."
+                  />
+                  <i class="fa-regular fa-heart like-book unliked"></i>
+                  <h5 class="card-title">My Book</h5>
+                  <a href="#" class="btn btn-light rounded-pill shadow px-3"
+                    >GET IT NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="d-flex justify-content-center mt-4">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer class="container px-5 mt-5">
+      <div class="d-flex justify-content-between">
+        <div>
+          <h5 class="footer-title">LEARN MORE</h5>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">TOUR</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">NEW FEATURES</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">CHANGELOG</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">CUSTOMERS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">ENTERPRISE</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">PRICING & PLANS</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer-title">ABOUT</h5>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">BLOG</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">COMPANY</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">JOBS</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer-title">SUPPORT</h5>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">COMMUNITY</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">CONTACT US</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">UXPIN TUTORIALS</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer-title">FEATURES</h5>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">MOCKUPS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">PROTOTYPING</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">PHOTOSHOP IMPORT</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">SKETCH IMPORT</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer-title">FREEBIES</h5>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">MOCKUPS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FEEBIES</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">E-BOOKS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">UI KITS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">TEMPLATES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center pt-3 pb-3">
+        <img src="./assets/İmages/Logo.png" alt="" width="32" height="32" />
+        <span class="mt-auto mb-auto ms-2">Book Store</span>
+      </div>
+    </footer>
+    <script src="./assets/Bootstrap/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

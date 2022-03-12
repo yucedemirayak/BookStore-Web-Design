@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookStore - Main Page</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./assets/Bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/FontAwesome/css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/İmages/Logo.png"
+            style="margin-left: 1%; margin-right: 1%"
+            width="15%"
+            height="15%"
+          />
+          Book Store
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="list.html"
+                >e-books</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./test.html">blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">e-course</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">tutorials</a>
+            </li>
+            <li class="nav-item align-self-center">
+              <div
+                style="
+                  width: 2px;
+                  height: 25px;
+                  border-radius: 1px;
+                  opacity: 80%;
+                  background-color: grey;
+                "
+              ></div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">log in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link c-dark" href="#">sign up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div
+            class="d-block slider-img carousel-image-1"
+            alt="..."
+          ></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h1>First slide label</h1>
+            <p>Some representative placeholder content for the first slide.</p>
+            <button type="button" class="btn btn-dark rounded-pill fs-6 px-5">
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div
+
+            class="d-block slider-img carousel-image-2"
+            alt="..."
+          ></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Second slide label</h1>
+            <p>Some representative placeholder content for the second slide.</p>
+            <button type="button" class="btn btn-dark rounded-pill fs-6 px-5">
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div
+
+            class="d-block slider-img carousel-image-3"
+            alt="..."
+          ></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Third slide label</h1>
+            <p>Some representative placeholder content for the third slide.</p>
+            <button type="button" class="btn btn-dark rounded-pill fs-6 px-5">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="row mt-5 mx-0">
+      <section class="offset-2 col-9">
+        <div class="d-flex flex-row justify-content-between align-items-center">
+          <h4>E-BOOKS & WHITE PAPERS</h4>
+          <i
+            class="fa-solid fa-magnifying-glass rounded-circle p-2 shadow search-icon-color justify-content-around"
+          ></i>
+        </div>
+        <section class="row mt-3">
+          <div class="col-4">
+            <div class="card book-list-card-bg">
+              <div class="card-body">
+                <img
+                  src="assets/İmages/Book Covers/Book-Cover.jpg"
+                  class="book-cover"
+                  alt="..."
+                />
+                <i class="fa-solid fa-heart like-book liked"></i>
+                <h5 class="card-title">My Book</h5>
+                <a
+                  href="./details.html"
+                  class="btn btn-light rounded-pill shadow px-3"
+                  >GET IT NOW</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card book-list-card-bg">
+              <div class="card-body">
+                <img
+                  src="assets/İmages/Book Covers/Book-Cover.jpg"
+                  class="book-cover"
+                  alt="..."
+                />
+                <i class="fa-regular fa-heart like-book unliked"></i>
+                <h5 class="card-title">
+                  My Book
+                </h5>
+                <a href="#" class="btn btn-light rounded-pill shadow px-3"
+                  >GET IT NOW</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card book-list-card-bg">
+              <div class="card-body">
+                <img
+                  src="assets/İmages/Book Covers/Book-Cover.jpg"
+                  class="book-cover"
+                  alt="..."
+                />
+                <i class="fa-regular fa-heart like-book unliked"></i>
+                <h5 class="card-title">My Book</h5>
+                <a href="#" class="btn btn-light rounded-pill shadow px-3"
+                  >GET IT NOW</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card book-list-card-bg">
+              <div class="card-body">
+                <img
+                  src="assets/İmages/Book Covers/Book-Cover.jpg"
+                  class="book-cover"
+                  alt="..."
+                />
+                <i class="fa-regular fa-heart like-book unliked"></i>
+                <h5 class="card-title">My Book</h5>
+                <a href="#" class="btn btn-light rounded-pill shadow px-3"
+                  >GET IT NOW</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card book-list-card-bg">
+              <div class="card-body">
+                <img
+                  src="assets/İmages/Book Covers/Book-Cover.jpg"
+                  class="book-cover"
+                  alt="..."
+                />
+                <i class="fa-regular fa-heart like-book unliked"></i>
+                <h5 class="card-title">My Book</h5>
+                <a href="#" class="btn btn-light rounded-pill shadow px-3"
+                  >GET IT NOW</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card book-list-card-bg">
+              <div class="card-body">
+                <img
+                  src="assets/İmages/Book Covers/Book-Cover.jpg"
+                  class="book-cover"
+                  alt="..."
+                />
+                <i class="fa-regular fa-heart like-book unliked"></i>
+                <h5 class="card-title">My Book</h5>
+                <a href="#" class="btn btn-light rounded-pill shadow px-3"
+                  >GET IT NOW</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card book-list-card-bg">
+              <div class="card-body">
+                <img
+                  src="assets/İmages/Book Covers/Book-Cover.jpg"
+                  class="book-cover"
+                  alt="..."
+                />
+                <i class="fa-regular fa-heart like-book unliked"></i>
+                <h5 class="card-title">My Book</h5>
+                <a href="#" class="btn btn-light rounded-pill shadow px-3"
+                  >GET IT NOW</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card book-list-card-bg">
+              <div class="card-body">
+                <img
+                  src="assets/İmages/Book Covers/Book-Cover.jpg"
+                  class="book-cover"
+                  alt="..."
+                />
+                <i class="fa-regular fa-heart like-book unliked"></i>
+                <h5 class="card-title">My Book</h5>
+                <a href="#" class="btn btn-light rounded-pill shadow px-3"
+                  >GET IT NOW</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card book-list-card-bg">
+              <div class="card-body">
+                <img
+                  src="assets/İmages/Book Covers/Book-Cover.jpg"
+                  class="book-cover"
+                  alt="..."
+                />
+                <i class="fa-regular fa-heart like-book unliked"></i>
+                <h5 class="card-title">My Book</h5>
+                <a href="#" class="btn btn-light rounded-pill shadow px-3"
+                  >GET IT NOW</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-4 offset-4 text-center mt-5 map-back">
+            <img src="./assets/İmages/world map dotted.png" class="world-map" />
+            <a href="./list.html">
+              <button class="btn btn-success rounded-pill px-5 load-more mt-2">
+                LOAD MORE<i class="fa-solid fa-chevron-down ms-3"></i>
+              </button>
+            </a>
+          </div>
+        </section>
+      </section>
+      <section class="offset-2 col-9">
+        <div class="bgfollow"></div>
+        <div class="pt-5">
+          <h4>FOLLOW US</h4>
+          <section id="social-media-links" class="row">
+            <div class="col-4 p-3">
+              <div class="social-media-container">
+                <strong>FACEBOOK</strong>
+                <button class="btn btn-sm social-media-button">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Like</span>
+                  <span>144K</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-4 p-3">
+              <div
+                class="social-media-container"
+                style="border-top: 3px solid hsl(192deg 100% 66%)"
+              >
+                <strong>TWITTER</strong>
+                <button
+                  class="btn btn-sm social-media-button"
+                  style="background-color: hsl(192deg 100% 66%) !important"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                  <span>Like</span>
+                  <span>103K</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-4 p-3">
+              <div
+                class="social-media-container"
+                style="border-top: 3px solid hsl(329deg 90% 64%)"
+              >
+                <strong>DRIBBLE</strong>
+                <button
+                  class="btn btn-sm social-media-button"
+                  style="background-color: hsl(337deg 79% 61%) !important"
+                >
+                  <i class="fa-brands fa-dribbble"></i>
+                  <span>Like</span>
+                  <span>144K</span>
+                </button>
+              </div>
+            </div>
+          </section>
+          <section
+            class="d-flex align-items-center justify-content-center mt-5 mb-5"
+          >
+            <div class="d-flex flex-column align-items-center">
+              <h4>SUBSCRIBE OUR NEWSLETTER</h4>
+              <div class="mt-4">
+                <input
+                  class="newsletter-email"
+                  placeholder="E-mail Adress..."
+                />
+                <button
+                  class="btn btn-success rounded-pill ms-3 subscribe-button px-5"
+                >
+                  SUBSCRIBE
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </section>
+
+    <footer class="pt-5 container">
+      <div class="d-flex justify-content-between">
+        <div>
+          <h5 class="footer-title">LEARN MORE</h5>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">TOUR</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">NEW FEATURES</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">CHANGELOG</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">CUSTOMERS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">ENTERPRISE</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">PRICING & PLANS</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer-title">ABOUT</h5>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">BLOG</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">COMPANY</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">JOBS</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer-title">SUPPORT</h5>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">COMMUNITY</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">CONTACT US</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">UXPIN TUTORIALS</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer-title">FEATURES</h5>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">MOCKUPS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">PROTOTYPING</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">PHOTOSHOP IMPORT</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">SKETCH IMPORT</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer-title">FREEBIES</h5>
+          <ul class="nav flex-column mt-5">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">MOCKUPS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FEEBIES</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">E-BOOKS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">UI KITS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">TEMPLATES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center pt-3 pb-3">
+        <img src="./assets/İmages/Logo.png" alt="" width="32" height="32" />
+        <span class="mt-auto mb-auto ms-2">Book Store</span>
+      </div>
+    </footer>
+    <script src="./assets/Bootstrap/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
